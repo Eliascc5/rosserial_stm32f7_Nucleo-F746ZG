@@ -1,0 +1,4 @@
+connections/org.eclipse.remote.telnet.core.connectionType/333/telnet.hostname.attr=333
+connections/org.eclipse.remote.telnet.core.connectionType/333/telnet.port.attr=23
+connections/org.eclipse.remote.telnet.core.connectionType/333/telnet.timeout.attr=0
+eclipse.preferences.version=1

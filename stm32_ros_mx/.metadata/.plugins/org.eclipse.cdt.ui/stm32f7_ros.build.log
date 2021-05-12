@@ -1,0 +1,93 @@
+16:42:55 **** Incremental Build of configuration Debug for project stm32f7_ros ****
+make -j4 all 
+arm-none-eabi-g++ "../turtlebot3/src/turtlebot3/turtlebot3_controller.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -c -I"/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/RC100" -I"/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino" -I"/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/IMU" -I"/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/Src" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"turtlebot3/src/turtlebot3/turtlebot3_controller.d" -MT"turtlebot3/src/turtlebot3/turtlebot3_controller.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "turtlebot3/src/turtlebot3/turtlebot3_controller.o"
+arm-none-eabi-g++ "../turtlebot3/src/turtlebot3/turtlebot3_diagnosis.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -c -I"/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/RC100" -I"/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino" -I"/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/IMU" -I"/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/Src" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"turtlebot3/src/turtlebot3/turtlebot3_diagnosis.d" -MT"turtlebot3/src/turtlebot3/turtlebot3_diagnosis.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "turtlebot3/src/turtlebot3/turtlebot3_diagnosis.o"
+arm-none-eabi-g++ "../turtlebot3/src/turtlebot3/turtlebot3_motor_driver.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -c -I"/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/RC100" -I"/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino" -I"/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/IMU" -I"/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/Src" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"turtlebot3/src/turtlebot3/turtlebot3_motor_driver.d" -MT"turtlebot3/src/turtlebot3/turtlebot3_motor_driver.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "turtlebot3/src/turtlebot3/turtlebot3_motor_driver.o"
+arm-none-eabi-g++ "../turtlebot3/src/turtlebot3/turtlebot3_sensor.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -c -I"/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/RC100" -I"/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino" -I"/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/IMU" -I"/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/Src" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"turtlebot3/src/turtlebot3/turtlebot3_sensor.d" -MT"turtlebot3/src/turtlebot3/turtlebot3_sensor.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "turtlebot3/src/turtlebot3/turtlebot3_sensor.o"
+In file included from ../turtlebot3/src/turtlebot3/turtlebot3_controller.cpp:19:
+../turtlebot3/src/turtlebot3/../../include/turtlebot3/turtlebot3_controller.h:25:10: fatal error: geometry_msgs/Twist.h: No such file or directory
+   25 | #include <geometry_msgs/Twist.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../turtlebot3/src/turtlebot3/turtlebot3_motor_driver.cpp:19:
+../turtlebot3/src/turtlebot3/../../include/turtlebot3/turtlebot3_motor_driver.h:23:10: fatal error: DynamixelSDK.h: No such file or directory
+   23 | #include <DynamixelSDK.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+compilation terminated.
+make: *** [turtlebot3/src/turtlebot3/subdir.mk:28: turtlebot3/src/turtlebot3/turtlebot3_controller.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [turtlebot3/src/turtlebot3/subdir.mk:32: turtlebot3/src/turtlebot3/turtlebot3_motor_driver.o] Error 1
+In file included from ../turtlebot3/src/turtlebot3/../../include/turtlebot3/turtlebot3_sensor.h:22,
+                 from ../turtlebot3/src/turtlebot3/turtlebot3_sensor.cpp:19:
+/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/IMU/IMU.h:20:10: fatal error: SPI.h: No such file or directory
+   20 | #include <SPI.h>
+      |          ^~~~~~~
+compilation terminated.
+make: *** [turtlebot3/src/turtlebot3/subdir.mk:34: turtlebot3/src/turtlebot3/turtlebot3_sensor.o] Error 1
+In file included from /home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino/Arduino.h:88,
+                 from ../turtlebot3/src/turtlebot3/../../include/turtlebot3/turtlebot3_diagnosis.h:22,
+                 from ../turtlebot3/src/turtlebot3/turtlebot3_diagnosis.cpp:19:
+/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/Src/variant.h:60:4: error: 'GPIO_TypeDef' does not name a type
+   60 |    GPIO_TypeDef *GPIOx_Port;
+      |    ^~~~~~~~~~~~
+/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/Src/variant.h:64:4: error: 'ADC_HandleTypeDef' does not name a type
+   64 |    ADC_HandleTypeDef *ADCx;
+      |    ^~~~~~~~~~~~~~~~~
+/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/Src/variant.h:67:5: error: 'TIM_HandleTypeDef' does not name a type
+   67 |     TIM_HandleTypeDef *TIMx;
+      |     ^~~~~~~~~~~~~~~~~
+In file included from /home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino/Arduino.h:98,
+                 from ../turtlebot3/src/turtlebot3/../../include/turtlebot3/turtlebot3_diagnosis.h:22,
+                 from ../turtlebot3/src/turtlebot3/turtlebot3_diagnosis.cpp:19:
+/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino/wiring_analog.h:29:8: error: 'ADC_HandleTypeDef' does not name a type
+   29 | extern ADC_HandleTypeDef hadc1;
+      |        ^~~~~~~~~~~~~~~~~
+/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino/wiring_analog.h:30:8: error: 'ADC_HandleTypeDef' does not name a type
+   30 | extern ADC_HandleTypeDef hadc2;
+      |        ^~~~~~~~~~~~~~~~~
+/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino/wiring_analog.h:32:8: error: 'TIM_HandleTypeDef' does not name a type
+   32 | extern TIM_HandleTypeDef htim1;
+      |        ^~~~~~~~~~~~~~~~~
+/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino/wiring_analog.h:33:8: error: 'TIM_HandleTypeDef' does not name a type
+   33 | extern TIM_HandleTypeDef htim2;
+      |        ^~~~~~~~~~~~~~~~~
+/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino/wiring_analog.h:34:8: error: 'TIM_HandleTypeDef' does not name a type
+   34 | extern TIM_HandleTypeDef htim3;
+      |        ^~~~~~~~~~~~~~~~~
+/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino/wiring_analog.h:35:8: error: 'TIM_HandleTypeDef' does not name a type
+   35 | extern TIM_HandleTypeDef htim4;
+      |        ^~~~~~~~~~~~~~~~~
+In file included from /home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino/Arduino.h:101,
+                 from ../turtlebot3/src/turtlebot3/../../include/turtlebot3/turtlebot3_diagnosis.h:22,
+                 from ../turtlebot3/src/turtlebot3/turtlebot3_diagnosis.cpp:19:
+/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino/digitalWriteFast.h: In function 'void digitalWriteFast(uint8_t, uint8_t)':
+/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino/digitalWriteFast.h:38:33: error: 'const Pin2PortMapArray' {aka 'const struct _Pin2PortMapArray'} has no member named 'GPIOx_Port'
+   38 |         g_Pin2PortMapArray[pin].GPIOx_Port->BSRR = g_Pin2PortMapArray[pin].Pin_abstraction;
+      |                                 ^~~~~~~~~~
+/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino/digitalWriteFast.h:42:33: error: 'const Pin2PortMapArray' {aka 'const struct _Pin2PortMapArray'} has no member named 'GPIOx_Port'
+   42 |         g_Pin2PortMapArray[pin].GPIOx_Port->BSRR = (g_Pin2PortMapArray[pin].Pin_abstraction << 16);
+      |                                 ^~~~~~~~~~
+/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino/digitalWriteFast.h: In function 'int digitalReadFast(uint8_t)':
+/home/eliascc/Documentos/STM32_ros_example/stm32_ros_mx/stm32f7_ros/cores/arduino/digitalWriteFast.h:56:39: error: 'const Pin2PortMapArray' {aka 'const struct _Pin2PortMapArray'} has no member named 'GPIOx_Port'
+   56 |       return (g_Pin2PortMapArray[pin].GPIOx_Port->IDR & g_Pin2PortMapArray[pin].Pin_abstraction)? HIGH : LOW;
+      |                                       ^~~~~~~~~~
+../turtlebot3/src/turtlebot3/turtlebot3_diagnosis.cpp: In member function 'void Turtlebot3Diagnosis::setPowerOn()':
+../turtlebot3/src/turtlebot3/turtlebot3_diagnosis.cpp:111:16: error: 'BDPIN_DXL_PWR_EN' was not declared in this scope
+  111 |   digitalWrite(BDPIN_DXL_PWR_EN, HIGH);
+      |                ^~~~~~~~~~~~~~~~
+../turtlebot3/src/turtlebot3/turtlebot3_diagnosis.cpp: In member function 'void Turtlebot3Diagnosis::setPowerOff()':
+../turtlebot3/src/turtlebot3/turtlebot3_diagnosis.cpp:116:16: error: 'BDPIN_DXL_PWR_EN' was not declared in this scope
+  116 |   digitalWrite(BDPIN_DXL_PWR_EN, LOW);
+      |                ^~~~~~~~~~~~~~~~
+../turtlebot3/src/turtlebot3/turtlebot3_diagnosis.cpp: In member function 'uint8_t Turtlebot3Diagnosis::updateVoltageCheck(bool)':
+../turtlebot3/src/turtlebot3/turtlebot3_diagnosis.cpp:195:20: error: 'BDPIN_BUZZER' was not declared in this scope
+  195 |             noTone(BDPIN_BUZZER);
+      |                    ^~~~~~~~~~~~
+../turtlebot3/src/turtlebot3/turtlebot3_diagnosis.cpp:264:16: error: 'BDPIN_BUZZER' was not declared in this scope
+  264 |           tone(BDPIN_BUZZER, 1000, 500);
+      |                ^~~~~~~~~~~~
+make: *** [turtlebot3/src/turtlebot3/subdir.mk:30: turtlebot3/src/turtlebot3/turtlebot3_diagnosis.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+16:42:56 Build Failed. 24 errors, 0 warnings. (took 775ms)
+
