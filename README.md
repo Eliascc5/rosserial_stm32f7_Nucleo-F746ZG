@@ -33,7 +33,7 @@ Then: `cd ..` and `catkin_make`
 
 Finally, you should:  
 
-- You go back to your project in STM32IDE, right click > Convert your stm32 project to C ++ 
+- You go back to your project in STM32IDE, right click > Convert your stm32 project to C ++ (Because ROS libraries are written in C++)
 
 - Rename main.c to main.cpp
 
